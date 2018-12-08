@@ -3571,7 +3571,7 @@ input, select, textarea {
 			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
 			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-			transition: transform 0.5s ease, opacity 0.5s ease;
+			transition: transform 0.4s ease, opacity 0.4s ease; /* Changed from 0.5*/
 			display: inline-block;
 			font-size: 1.75em;
 			opacity: 1;
@@ -3588,7 +3588,7 @@ input, select, textarea {
 				-moz-transition-delay: 0.25s;
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
+				transition-delay: 0.1s; /*changed from 0.25 */
 				background: #fff;
 				content: '';
 				display: block;
@@ -3624,7 +3624,7 @@ input, select, textarea {
 			-moz-transition-delay: 3.5s;
 			-webkit-transition-delay: 3.5s;
 			-ms-transition-delay: 3.5s;
-			transition-delay: 3.5s;
+			transition-delay: 1.0s; /* changed from 3.5 */
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3671,7 +3671,7 @@ input, select, textarea {
 			-moz-transition-delay: 1.25s;
 			-webkit-transition-delay: 1.25s;
 			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
+			transition-delay: 0.5s; /* changed from 1.25 texten efter rubrik */
 			content: '';
 			background: #2e3842;
 			display: block;
