@@ -1,0 +1,9 @@
+# Cloudflare Pages: cache-regler.
+# Filnamnen innehåller ingen versionshash, så cachetiden hålls på en vecka.
+# Byt filnamn (t.ex. banner-2.webp) om en bild ändras och måste slå igenom direkt.
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/images/*
+  Cache-Control: public, max-age=604800
