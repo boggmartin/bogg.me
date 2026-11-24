@@ -1,6 +1,6 @@
 # bogg.me
 
-Källkod för www.boggma.se, en statisk sida byggd på mallen Spectral från HTML5 UP.
+Källkod för www.boggma.se: en enda statisk HTML-sida med inbäddad CSS, utan bilder, skript eller externa typsnitt.
 
 ## Struktur
 
@@ -14,7 +14,7 @@ Sajten publiceras automatiskt av Cloudflare Pages vid varje push till `master`.
 - Build command: *(tomt)*
 - Build output directory: `web-bio`
 
-`web-bio/_headers` styr cache-tiderna för bilder, CSS och JS.
+`web-bio/_headers` styr cache-tiden för favicon-bilden.
 
 ## DNS (Loopia)
 
