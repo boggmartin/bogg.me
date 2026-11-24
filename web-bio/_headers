@@ -1,4 +1,0 @@
-# Cloudflare Pages: cache-regler.
-
-/images/*
-  Cache-Control: public, max-age=604800

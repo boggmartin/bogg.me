@@ -14,7 +14,6 @@ Sajten publiceras automatiskt av Cloudflare Pages vid varje push till `master`.
 - Build command: *(tomt)*
 - Build output directory: `web-bio`
 
-`web-bio/_headers` styr cache-tiden för favicon-bilden.
 
 ## DNS (Loopia)
 
