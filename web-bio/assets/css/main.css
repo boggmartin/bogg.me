@@ -1,5 +1,3 @@
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
 	Spectral by HTML5 UP
@@ -3850,6 +3848,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), image-set(url("../../images/banner.webp") type("image/webp"), url("../../images/banner.jpg") type("image/jpeg"));
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -4000,6 +3999,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), image-set(url("../../images/banner.webp") type("image/webp"), url("../../images/banner.jpg") type("image/jpeg"));
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -4021,6 +4021,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), image-set(url("../../images/banner.webp") type("image/webp"), url("../../images/banner.jpg") type("image/jpeg"));
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4028,4 +4029,13 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+/* Inline SVG icons (replaces Font Awesome webfont) */
+
+	.svg-icon {
+		height: 1em;
+		width: auto;
+		fill: currentColor;
+		vertical-align: -0.143em;
 	}
