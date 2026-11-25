@@ -5,161 +5,90 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Boggma AB</title>
 	<meta name="description" content="Boggma AB drivs av Bogg Martin Nåtby: rådgivning, projektledning och snickerier." />
-	<meta name="theme-color" content="#0b1a2e" />
+	<meta name="theme-color" content="#f7f6f3" />
 	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1a2e'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='system-ui,Arial,sans-serif' font-size='38' font-weight='600' fill='%23ffffff'%3EB%3C/text%3E%3C/svg%3E" />
 	<style>
 		:root {
-			--ink: #ffffff;
-			--muted: rgba(255, 255, 255, 0.65);
-			--faint: rgba(255, 255, 255, 0.45);
-			--accent: #7fd4ff;
-			--night: #050b14;
+			--paper: #f7f6f3;
+			--ink: #1b2431;
+			--muted: #4d5663;
+			--line: #c9c6bf;
 		}
 
 		* { box-sizing: border-box; margin: 0; padding: 0; }
 
-		html { background: var(--night); }
-
 		body {
 			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			background: var(--paper);
 			color: var(--ink);
 			font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 			font-size: 1.0625rem;
-			line-height: 1.65;
-			letter-spacing: 0.02em;
+			line-height: 1.7;
 			-webkit-font-smoothing: antialiased;
-			/* Natthimmel: mörkt ovanför, blått mot horisonten */
-			background:
-				radial-gradient(ellipse 55% 30% at 50% 30%, rgba(64, 128, 196, 0.20), transparent 70%),
-				radial-gradient(ellipse 110% 22% at 50% 64%, rgba(40, 104, 164, 0.45), transparent 75%),
-				linear-gradient(180deg, #050b14 0%, #0b1a2e 38%, #12365a 62%, #0a1828 82%, #050b14 100%);
-			display: flex;
-			flex-direction: column;
 		}
-
-		/* Stjärnor: små radiella punkter i ett upprepat mönster */
-		body::before {
-			content: "";
-			position: fixed;
-			inset: 0;
-			pointer-events: none;
-			opacity: 0.55;
-			background-image:
-				radial-gradient(1px 1px at 12% 18%, #fff, transparent),
-				radial-gradient(1px 1px at 37% 72%, #fff, transparent),
-				radial-gradient(1.5px 1.5px at 68% 31%, #fff, transparent),
-				radial-gradient(1px 1px at 84% 64%, #fff, transparent),
-				radial-gradient(1px 1px at 23% 47%, rgba(255,255,255,0.8), transparent),
-				radial-gradient(1px 1px at 55% 12%, rgba(255,255,255,0.8), transparent),
-				radial-gradient(1.5px 1.5px at 91% 9%, #fff, transparent),
-				radial-gradient(1px 1px at 6% 83%, rgba(255,255,255,0.7), transparent),
-				radial-gradient(1px 1px at 47% 41%, rgba(255,255,255,0.7), transparent),
-				radial-gradient(1px 1px at 75% 88%, rgba(255,255,255,0.7), transparent);
-			background-size: 340px 340px;
-		}
-
-		a { color: inherit; }
-
-		header.site {
-			position: relative;
-			padding: 1.25rem 1.5rem;
-			font-size: 0.8rem;
-			font-weight: 600;
-			letter-spacing: 0.22em;
-			text-transform: uppercase;
-		}
-
-		header.site a { text-decoration: none; }
 
 		main {
-			position: relative;
 			flex: 1;
 			display: flex;
-			flex-direction: column;
+			align-items: center;
+			padding: 4rem 1.5rem;
 		}
 
-		.hero {
-			min-height: 62vh;
-			display: grid;
-			place-items: center;
-			text-align: center;
-			padding: 2rem 1.5rem;
-		}
-
-		.hero h1 {
-			font-size: clamp(1.25rem, 3vw, 1.75rem);
-			font-weight: 400;
-			letter-spacing: 0.35em;
-			text-transform: uppercase;
-			padding: 1.1em 0;
-			border-top: 2px solid rgba(255, 255, 255, 0.85);
-			border-bottom: 2px solid rgba(255, 255, 255, 0.85);
-		}
-
-		.about {
-			text-align: center;
-			padding: 3rem 1.5rem 4rem;
-		}
-
-		.about p {
+		.content {
+			width: 100%;
 			max-width: 34rem;
 			margin: 0 auto;
-			color: var(--muted);
 		}
 
-		.about p + p { margin-top: 1.5rem; }
-
-		.about a {
-			color: var(--ink);
-			text-decoration: none;
-			border-bottom: 1px dotted var(--faint);
+		h1 {
+			font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+			font-size: clamp(1.9rem, 4vw, 2.4rem);
+			font-weight: 400;
+			letter-spacing: 0.04em;
+			line-height: 1.2;
+			padding-bottom: 1.25rem;
+			margin-bottom: 1.75rem;
+			border-bottom: 1px solid var(--ink);
 		}
 
-		.about a:hover, .about a:focus-visible { color: var(--accent); border-bottom-color: var(--accent); }
+		p { color: var(--muted); }
+
+		p + p { margin-top: 1.25rem; }
+
+		a { color: var(--ink); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+
+		a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 
 		footer {
-			position: relative;
-			text-align: center;
-			padding: 1rem 1.5rem 3rem;
+			padding: 1.5rem;
+			border-top: 1px solid var(--line);
 		}
 
 		.icons {
 			list-style: none;
 			display: flex;
-			justify-content: center;
-			gap: 1.75rem;
-			font-size: 1.25rem;
+			gap: 1.5rem;
+			max-width: 34rem;
+			margin: 0 auto;
+			font-size: 1.1rem;
 		}
 
-		.icons a {
-			display: inline-flex;
-			color: var(--faint);
-			transition: color 0.2s ease;
-		}
+		.icons a { display: inline-flex; color: var(--muted); }
 
 		.icons a:hover, .icons a:focus-visible { color: var(--ink); }
 
 		.icons svg { height: 1em; width: auto; fill: currentColor; }
-
-		@media (prefers-reduced-motion: reduce) {
-			.icons a { transition: none; }
-		}
 	</style>
 </head>
 <body>
-	<header class="site">
-		<a href="/">Bogg Martin Nåtby</a>
-	</header>
-
 	<main>
-		<section class="hero">
+		<div class="content">
 			<h1>Boggma AB</h1>
-		</section>
-
-		<section class="about">
 			<p>Boggma drivs av mig, Bogg Martin Nåtby. Jag arbetar bland annat med rådgivning, projektledning och snickerier.</p>
 			<p>Kontakta mig: <a href="mailto:martin@boggma.se">martin@boggma.se</a></p>
-		</section>
+		</div>
 	</main>
 
 	<footer>
